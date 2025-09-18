@@ -7,13 +7,13 @@ export default function HeroSection() {
   const idMap: Record<string, string> = { 'About Us': 'about', Pricing: 'pricing', FAQs: 'faqs', Contact: 'contact' };
 
   return (
-    <section className="relative w-full bg-primary text-white min-h-screen flex flex-col">
+    <section className="relative w-full bg-primary text-white h-screen flex flex-col">
       {/* Full-width header */}
       <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
         <div className="max-w-[1500px] mx-auto px-4 sm:px-8 md:px-16 flex items-center justify-between py-4 sm:py-5">
           <a href="#" className="flex items-center gap-3 text-xl sm:text-2xl font-semibold tracking-tight text-primary">
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/NeuroNest Logo-1758108373222.png"
+              src="/NeuroNest Logo.png"
               alt="NeuroNest logo"
               width={40}
               height={40}
@@ -35,14 +35,25 @@ export default function HeroSection() {
       {/* Hero body - vertically centered */}
       <div className="flex-1 flex items-center">
         <div className="max-w-[1500px] mx-auto px-4 sm:px-8 md:px-16 w-full">
-          <div className="max-w-3xl">
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] text-white">
-              <span className="block">Neuronest</span>
-              <span className="block">Psychology</span>
-            </h1>
-            <p className="mt-6 text-white/90 text-base sm:text-lg md:text-xl max-w-2xl">
-            Understanding every child to unlock their potential.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl">
+              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] text-white">
+                <span className="block">Neuronest</span>
+                <span className="block">Psychology</span>
+              </h1>
+              <p className="mt-6 text-white/90 text-base sm:text-lg md:text-xl max-w-2xl">
+              Understanding every child to unlock their potential.
+              </p>
+            </div>
+            <div className="relative">
+              <Image
+                src="/IMG_3590.jpeg"
+                alt="Neuronest Psychology"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg object-cover w-full h-[400px]"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const adhdChallenges = [
   {
@@ -30,9 +31,18 @@ const ADHDDetailsSection = () => {
           <h2 className="text-primary text-3xl md:text-4xl font-bold mb-4">
             Understanding ADHD Assessment
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8">
             ADHD is a neurological condition that affects around 5% of children and can influence concentration, behaviour at home and school, friendships, and self-esteem.
           </p>
+          <div className="relative max-w-2xl mx-auto">
+            <Image
+              src="https://images.unsplash.com/photo-1554721299-e0b8aa7666ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Boys writing on book"
+              width={800}
+              height={400}
+              className="rounded-lg shadow-lg object-cover w-full h-[300px]"
+            />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-12">

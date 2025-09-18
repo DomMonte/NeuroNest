@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const processSteps = [
   {
@@ -67,13 +68,22 @@ const AssessmentProcessSection = () => {
         {/* Assessment Process */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-primary text-3xl md:text-4xl font-bold mb-4">
-              Our Assessment Process
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              At Neuronest Psychology, we provide comprehensive assessments to help you better understand your child's learning, thinking, and cognitive strengths. These assessments are suitable for children aged 4–16 years and use gold-standard tools tailored to their age.
-            </p>
+          <h2 className="text-primary text-3xl md:text-4xl font-bold mb-4">
+            Our Assessment Process
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8">
+            At Neuronest Psychology, we provide comprehensive assessments to help you better understand your child's learning, thinking, and cognitive strengths. These assessments are suitable for children aged 4–16 years and use gold-standard tools tailored to their age.
+          </p>
+          <div className="relative max-w-2xl mx-auto">
+            <Image
+              src="https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Boy writing on printer paper near girl"
+              width={800}
+              height={400}
+              className="rounded-lg shadow-lg object-cover w-full h-[300px]"
+            />
           </div>
+        </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {processSteps.map((step, index) => (

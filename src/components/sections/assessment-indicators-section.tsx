@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const assessmentIndicators = [
   {
@@ -58,9 +59,18 @@ const AssessmentIndicatorsSection = () => {
           <h2 className="text-primary text-3xl md:text-4xl font-bold mb-4">
             Does my child need an assessment?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8">
             Sometimes it can be difficult to know whether your child's challenges (or strengths) are part of typical development, or whether they would benefit from a formal assessment. Below are some common signs for each type of assessment we offer:
           </p>
+          <div className="relative max-w-2xl mx-auto">
+            <Image
+              src="https://images.unsplash.com/photo-1637195140076-31e92f35c256?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="A young child is doing something on a piece of paper"
+              width={800}
+              height={400}
+              className="rounded-lg shadow-lg object-cover w-full h-[300px]"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
