@@ -71,7 +71,7 @@ const AssessmentProcessSection = () => {
           <h2 className="text-primary text-3xl md:text-4xl font-bold mb-4">
             Our Assessment Process
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8 text-justify">
             At Neuronest Psychology, we provide comprehensive assessments to help you better understand your child's learning, thinking, and cognitive strengths. These assessments are suitable for children aged 4–16 years and use gold-standard tools tailored to their age.
           </p>
           <div className="relative max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ const AssessmentProcessSection = () => {
                   </div>
                   <h3 className="text-[#5f7362] font-bold text-lg">{step.title}</h3>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed text-justify">{step.description}</p>
               </div>
             ))}
           </div>
@@ -133,10 +133,10 @@ const AssessmentProcessSection = () => {
         <div className="mt-12 bg-secondary rounded-lg p-6 lg:p-8 border-t-4 border-[#5f7362]">
           <div className="text-center">
             <h3 className="text-[#5f7362] text-xl font-bold mb-4">Session Details</h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground mb-4 text-justify">
               Each assessment session with your child takes approximately 2 hours generally, depending on their age and ability. To ensure we get the most accurate picture, we also offer the option of school-based observation and assessment, allowing us to see how your child learns and interacts in their everyday classroom environment.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-justify">
               After the assessment, parents or caregivers are invited to a separate feedback session where we explain the results clearly and answer any questions. You will also receive a comprehensive written report, including practical recommendations to support your child at home and school.
             </p>
           </div>

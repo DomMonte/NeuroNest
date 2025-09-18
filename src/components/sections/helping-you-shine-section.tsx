@@ -30,11 +30,11 @@ const HelpingYouShineSection = () => {
               Our approach
             </h3>
             <div className="mt-6 space-y-4 text-muted-foreground text-base leading-relaxed">
-              <p>
+              <p className="text-justify">
                 At Solasta, we take a warm, collaborative, and evidence-based
                 approach to all assessments.
               </p>
-              <p>
+              <p className="text-justify">
                 We are guided by our values of compassion, integrity, and
                 respect, and we work in partnership with children and families to
                 ensure they feel heard, listened to, respected, and supported.

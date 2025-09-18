@@ -82,7 +82,7 @@ export default function FaqSection() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pt-2 pb-6 pl-12 text-muted-foreground text-base leading-relaxed">
-                <p>{faq.answer}</p>
+                <p className="text-justify">{faq.answer}</p>
               </AccordionContent>
             </AccordionItem>
           ))}

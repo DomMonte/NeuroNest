@@ -18,15 +18,15 @@ const AboutUsSection = () => {
                 Welcome to Neuronest Psychology.
               </p>
               
-              <p>
+              <p className="text-justify">
                 At Neuronest Psychology, we believe every child has the potential to succeed when the right supports are in place. Our role is to uncover how each child learns, thinks, and engages with the world through a range of comprehensive assessments.
               </p>
               
-              <p>
+              <p className="text-justify">
                 We specialise in cognitive, psycho-educational, ADHD, and giftedness assessments. These assessments provide a clear understanding of your child's strengths, challenges, and learning style. By combining detailed testing with input from families, schools, and (where appropriate) classroom observations, we create a complete picture of your child's unique learning profile.
               </p>
               
-              <p>
+              <p className="text-justify">
                 With this knowledge, we provide families and educators with practical, evidence-based recommendations to guide tailored support. This ensures your child is not only better understood but also better equipped to reach their full potential and thrive at school, at home, and beyond.
               </p>
             </div>

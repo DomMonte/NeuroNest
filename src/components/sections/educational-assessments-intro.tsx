@@ -35,10 +35,10 @@ const EducationalAssessmentsIntro = () => {
           </h2>
           <div className="max-w-3xl mx-auto">
             <div className="text-muted-foreground space-y-4 text-lg leading-relaxed">
-              <p>
+              <p className="text-justify">
                 Our comprehensive assessments use evidence-based tools and methods to evaluate your child's unique learning profile across multiple domains.
               </p>
-              <p>
+              <p className="text-justify">
                 Each assessment is tailored to your child's specific needs and includes detailed analysis, clear explanations, and practical recommendations for home and school environments.
               </p>
             </div>
@@ -59,7 +59,7 @@ const EducationalAssessmentsIntro = () => {
               </div>
               <div className="p-6 lg:p-8">
                 <h3 className="text-[#5f7362] font-bold text-xl mb-4">{assessment.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{assessment.description}</p>
+                <p className="text-muted-foreground leading-relaxed text-justify">{assessment.description}</p>
               </div>
             </div>
           ))}
@@ -67,7 +67,7 @@ const EducationalAssessmentsIntro = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <p className="text-muted-foreground mb-6 text-lg">
+          <p className="text-muted-foreground mb-6 text-lg text-justify">
             We work collaboratively with families and educators to ensure our insights translate into meaningful support strategies that help your child thrive.
           </p>
           <Link
