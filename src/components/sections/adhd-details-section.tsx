@@ -4,15 +4,15 @@ import Image from 'next/image';
 const adhdChallenges = [
   {
     title: "Inattention",
-    description: "easily distracted, disorganised, wandering off task, difficulty sustaining focus"
+    description: "Easily distracted, disorganised, wandering off task, difficulty sustaining focus"
   },
   {
     title: "Hyperactivity", 
-    description: "excessive movement, fidgeting, or constant talking"
+    description: "Excessive movement, fidgeting, or constant talking"
   },
   {
     title: "Impulsivity",
-    description: "interrupting, acting without thinking, difficulty waiting their turn"
+    description: "Interrupting, acting without thinking, difficulty waiting their turn"
   }
 ];
 
@@ -64,7 +64,7 @@ const ADHDDetailsSection = () => {
           <div>
             <h3 className="text-primary text-2xl font-bold mb-6">Assessment Process</h3>
             <p className="text-muted-foreground mb-6">
-              This process involves gathering information from parents and teachers through questionnaires and interviews, as well as observing your child during an assessment session. A psycho-educational assessment is often included to explore attention, focus, and learning skills, and to rule out any underlying learning difficulties.
+              This process involves gathering information from parents and teachers through questionnaires and interviews, as well as observing your child during an assessment session. A psycho-educational assessment is often included to explore attention, focus, and learning skills, and to identify whether there are any underlying learning difficulties.
             </p>
             <p className="text-muted-foreground mb-6">
               A comprehensive ADHD evaluation will include:

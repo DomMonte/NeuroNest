@@ -26,7 +26,7 @@ const assessmentTypes = [
 
 const EducationalAssessmentsIntro = () => {
   return (
-    <section className="bg-secondary py-16 md:py-20">
+    <section id="assessments" className="bg-secondary py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -35,10 +35,10 @@ const EducationalAssessmentsIntro = () => {
           </h2>
           <div className="max-w-3xl mx-auto">
             <div className="text-muted-foreground space-y-4 text-lg leading-relaxed">
-              <p className="text-justify">
+              <p>
                 Our comprehensive assessments use evidence-based tools and methods to evaluate your child's unique learning profile across multiple domains.
               </p>
-              <p className="text-justify">
+              <p>
                 Each assessment is tailored to your child's specific needs and includes detailed analysis, clear explanations, and practical recommendations for home and school environments.
               </p>
             </div>
@@ -59,7 +59,7 @@ const EducationalAssessmentsIntro = () => {
               </div>
               <div className="p-6 lg:p-8">
                 <h3 className="text-[#5f7362] font-bold text-xl mb-4">{assessment.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-justify">{assessment.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{assessment.description}</p>
               </div>
             </div>
           ))}
@@ -67,11 +67,11 @@ const EducationalAssessmentsIntro = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <p className="text-muted-foreground mb-6 text-lg text-justify">
+          <p className="text-muted-foreground mb-6 text-lg">
             We work collaboratively with families and educators to ensure our insights translate into meaningful support strategies that help your child thrive.
           </p>
           <Link
-            href="https://solasta.net.au/appointments-and-referrals/"
+            href="/contact-us"
             className="inline-block bg-[#5f7362] text-white rounded-[25px] font-medium px-8 py-[15px] text-base shadow-[0_4px_12px_rgba(95,115,98,0.3)] hover:bg-[#5f7362]/90 transition-transform duration-300 ease-in-out hover:scale-105"
           >
             Request an appointment

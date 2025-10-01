@@ -4,7 +4,7 @@ import Image from 'next/image';
 const processSteps = [
   {
     step: "1",
-    title: "Book Your Spot",
+    title: "Book an Assessment",
     description: "Read through our website and contact us to set session dates and times. No referral from a GP is needed to book an educational assessment in Adelaide."
   },
   {
@@ -15,25 +15,20 @@ const processSteps = [
   {
     step: "3",
     title: "Assessment Session", 
-    description: "Your child attends a one-on-one session (around 2 hours). This may include cognitive testing, academic assessments, and engaging activities tailored to their age and needs."
+    description: "Your child attends a one-on-one session (around 2 hours). This may include cognitive testing, academic assessments, and engaging activities tailored to their age and needs. We can also visit your child at school to observe and assess them in their natural learning environment for the most accurate overview."
   },
   {
     step: "4",
-    title: "School Observation (Optional)",
-    description: "We can also visit your child at school to observe and assess them in their natural learning environment for the most accurate overview."
-  },
-  {
-    step: "5",
     title: "Scoring and Analysis",
     description: "All results are carefully scored and interpreted using evidence-based tools."
   },
   {
-    step: "6", 
+    step: "5", 
     title: "Feedback Session",
     description: "You attend a dedicated feedback appointment (around 60 minutes) where we explain the results clearly, answer questions, and outline recommendations."
   },
   {
-    step: "7",
+    step: "6",
     title: "Comprehensive Report",
     description: "You receive a detailed written report with practical strategies to support your child at home, school, and in other settings."
   }
@@ -71,7 +66,7 @@ const AssessmentProcessSection = () => {
           <h2 className="text-primary text-3xl md:text-4xl font-bold mb-4">
             Our Assessment Process
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8 text-justify">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8">
             At Neuronest Psychology, we provide comprehensive assessments to help you better understand your child's learning, thinking, and cognitive strengths. These assessments are suitable for children aged 4–16 years and use gold-standard tools tailored to their age.
           </p>
           <div className="relative max-w-2xl mx-auto">
@@ -94,7 +89,7 @@ const AssessmentProcessSection = () => {
                   </div>
                   <h3 className="text-[#5f7362] font-bold text-lg">{step.title}</h3>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed text-justify">{step.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
@@ -129,14 +124,18 @@ const AssessmentProcessSection = () => {
             </div>
           </div>
         </div>
+        <br />
+        <div className="text-center" >
+          <p className="text-xs italic text-muted-foreground">Please note: The assessments listed above are intended as a guide only. The specific tools used may vary depending on your child's individual needs, presentation, and circumstances. Our goal is select the most appropriate assessment to provide the clearest and most accurate understanding of your child's strengths and challenges.</p>
+        </div>
 
         <div className="mt-12 bg-secondary rounded-lg p-6 lg:p-8 border-t-4 border-[#5f7362]">
           <div className="text-center">
             <h3 className="text-[#5f7362] text-xl font-bold mb-4">Session Details</h3>
-            <p className="text-muted-foreground mb-4 text-justify">
+            <p className="text-muted-foreground mb-4">
               Each assessment session with your child takes approximately 2 hours generally, depending on their age and ability. To ensure we get the most accurate picture, we also offer the option of school-based observation and assessment, allowing us to see how your child learns and interacts in their everyday classroom environment.
             </p>
-            <p className="text-muted-foreground text-justify">
+            <p className="text-muted-foreground">
               After the assessment, parents or caregivers are invited to a separate feedback session where we explain the results clearly and answer any questions. You will also receive a comprehensive written report, including practical recommendations to support your child at home and school.
             </p>
           </div>

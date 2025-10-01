@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ListItem = ({ children }: { children: React.ReactNode }) => (
   <li className="flex text-base leading-relaxed text-muted-foreground">
@@ -55,12 +56,12 @@ const SignYourChildSection = () => {
               Whether you’re looking for answers, clarity, or just some guidance on how to best support your child or young person’s learning and development, we’re here to help.
             </p>
 
-            <a
-              href="https://solasta.net.au/appointments-and-referrals/"
+            <Link
+              href="/contact-us"
               className="inline-block bg-primary text-primary-foreground font-medium py-3.5 px-8 rounded-full shadow-[0_4px_12px_rgba(255,87,87,0.3)] hover:bg-accent transition-colors text-base"
             >
               Request an appointment
-            </a>
+            </Link>
           </div>
 
           {/* Right Column: Image */}

@@ -82,8 +82,8 @@ const AssessmentIndicatorsSection = () => {
               <ul className="space-y-2 mb-4">
                 {assessment.indicators.map((indicator, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span className="text-[#5f7362] mr-2 mt-1">•</span>
-                    <span className="text-muted-foreground text-sm">{indicator}</span>
+                    <span className="text-[#5f7362] mr-2 flex-shrink-0 leading-5">•</span>
+                    <span className="text-muted-foreground text-sm leading-5">{indicator}</span>
                   </li>
                 ))}
               </ul>

@@ -8,28 +8,27 @@ const ReadyToGetStartedSection = () => {
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
           Ready to get started?
         </h2>
-        <p className="text-lg text-white max-w-2xl mb-6">
-          Simply fill-out our appointment request form and we’ll be in touch.
+        <p className="text-lg text-white mb-6">
+          Simply fill out our contact form and we'll be in touch to discuss your child's assessment needs.
         </p>
         <p className="text-lg text-white mb-10">
-          If you have any questions, we encourage you to contact the team on{' '}
-          <a href="tel:1800943043" className="font-bold hover:underline">
-            1800 943 043
+          If you have any questions, we encourage you to contact us on{' '}
+          <a href="tel:0416086366" className="font-bold hover:underline">
+            0416 086 366
           </a>{' '}
           or{' '}
-          <a href="mailto:info@solasta.net.au" className="font-bold hover:underline">
-            info@solasta.net.au
+          <a href="mailto:daniela@neuronestadl.com.au" className="font-bold hover:underline">
+            daniela@neuronestadl.com.au
           </a>
         </p>
         <Link
-          href="/appointments-and-referrals"
-          className="inline-block bg-brand-yellow text-foreground font-medium text-base px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+          href="/contact-us"
+          className="inline-block bg-white text-primary font-medium text-base px-8 py-4 rounded-full shadow-lg hover:bg-white/90 transition-colors duration-300 ease-in-out"
         >
-          Request an appointment
+          Get in Touch
         </Link>
       </div>
     </section>
   );
 };
-
 export default ReadyToGetStartedSection;

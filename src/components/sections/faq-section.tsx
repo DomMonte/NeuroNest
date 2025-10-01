@@ -49,7 +49,7 @@ const faqItems: FaqItem[] = [
   },
   {
     question: "How do I book an assessment?",
-    answer: "Simply contact our friendly reception team via phone or email to arrange a consultation and secure your booking.",
+    answer: "Simply contact our friendly team via phone, email or the <a href='/contact-us' class='text-primary hover:text-primary/80 underline'>Contact Us page</a> to arrange a consultation and secure your booking.",
   },
   {
     question: "Do I need a referral?",
@@ -82,7 +82,7 @@ export default function FaqSection() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pt-2 pb-6 pl-12 text-muted-foreground text-base leading-relaxed">
-                <p className="text-justify">{faq.answer}</p>
+                <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
               </AccordionContent>
             </AccordionItem>
           ))}
