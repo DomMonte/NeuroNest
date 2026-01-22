@@ -10,32 +10,44 @@ import FaqSection from '@/components/sections/faq-section';
 
 export default function Page() {
   return (
-    <main id="main" className="min-h-screen pt-16 sm:pt-20">
+    <main id="main" className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <HeroSection />
-      {/* About Us */}
-      <section id="about">
-        <AboutUsSection />
-      </section>
-      {/* Services Overview */}
-      <EducationalAssessmentsIntro />
-      {/* Assessment Indicators */}
-      <AssessmentIndicatorsSection />
-      {/* ADHD Details */}
-      <ADHDDetailsSection />
-      {/* Assessment Process */}
-      <AssessmentProcessSection />
-      {/* Pricing */}
-      <section id="pricing">
-        <PricingSection />
-      </section>
-      {/* FAQs */}
-      <section id="faqs">
-        <FaqSection />
-      </section>
-      {/* Contact */}
-      <section id="contact">
-        <ReadyToGetStartedSection />
-      </section>
+      
+      <div className="flex flex-col gap-24 sm:gap-32 pb-24">
+        {/* About Us */}
+        <section id="about" className="scroll-mt-24">
+          <AboutUsSection />
+        </section>
+        
+        {/* Services Overview */}
+        <EducationalAssessmentsIntro />
+        
+        {/* Assessment Indicators */}
+        <section id="assessments" className="scroll-mt-24">
+          <AssessmentIndicatorsSection />
+        </section>
+        
+        {/* ADHD Details */}
+        <ADHDDetailsSection />
+        
+        {/* Assessment Process */}
+        <AssessmentProcessSection />
+        
+        {/* Pricing */}
+        <section id="pricing" className="scroll-mt-24">
+          <PricingSection />
+        </section>
+        
+        {/* FAQs */}
+        <section id="faqs" className="scroll-mt-24">
+          <FaqSection />
+        </section>
+        
+        {/* Contact */}
+        <section id="contact" className="scroll-mt-24">
+          <ReadyToGetStartedSection />
+        </section>
+      </div>
     </main>
   );
 }

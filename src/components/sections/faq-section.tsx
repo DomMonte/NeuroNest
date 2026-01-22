@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronRight } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 
 interface FaqItem {
   question: string;
@@ -49,7 +49,7 @@ const faqItems: FaqItem[] = [
   },
   {
     question: "How do I book an assessment?",
-    answer: "Simply contact our friendly team via phone, email or the <a href='/contact-us' class='text-primary hover:text-primary/80 underline'>Contact Us page</a> to arrange a consultation and secure your booking.",
+    answer: "Simply contact our friendly team via phone, email or the <a href='/contact-us' class='text-primary hover:text-primary/80 underline font-semibold'>Contact Us page</a> to arrange a consultation and secure your booking.",
   },
   {
     question: "Do I need a referral?",
@@ -67,21 +67,32 @@ const faqItems: FaqItem[] = [
 
 export default function FaqSection() {
   return (
-    <section className="bg-white py-20 md:py-24">
-      <div className="container mx-auto px-5 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12 md:mb-16">
-          Frequently asked questions
+    <section className="bg-secondary/30 py-24 sm:py-32">
+      <div className="container mx-auto px-6 max-w-4xl">
+        <h2 className="text-3xl md:text-5xl font-bold text-foreground text-center mb-6">
+          Frequently Asked <span className="text-primary">Questions</span>
         </h2>
-        <Accordion type="single" collapsible className="w-full">
+        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-lg">
+          Find answers to common questions about our assessments, process, and what you can expect.
+        </p>
+        
+        <Accordion type="single" collapsible className="w-full space-y-4">
           {faqItems.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b-border">
-              <AccordionTrigger className="text-left text-lg md:text-xl font-semibold text-primary hover:no-underline py-6 justify-start [&>svg:last-child]:hidden">
-                <div className="flex items-start">
-                  <ChevronRight className="h-6 w-6 mt-1 mr-6 text-chart-1 flex-shrink-0" />
-                  <span className="flex-1">{faq.question}</span>
+            <AccordionItem 
+              key={index} 
+              value={`item-${index}`} 
+              className="bg-card border border-border/50 rounded-xl px-6 py-2 shadow-sm data-[state=open]:shadow-md data-[state=open]:border-primary/20 transition-all duration-300"
+            >
+              <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-primary hover:no-underline py-4 [&>svg]:hidden w-full">
+                <div className="flex items-center justify-between w-full">
+                  <span className="mr-4">{faq.question}</span>
+                  <div className="text-primary transition-transform duration-200 shrink-0">
+                    <Plus className="h-5 w-5 group-data-[state=open]:hidden" />
+                    <Minus className="h-5 w-5 hidden group-data-[state=open]:block" />
+                  </div>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="pt-2 pb-6 pl-12 text-muted-foreground text-base leading-relaxed">
+              <AccordionContent className="pt-0 pb-6 text-muted-foreground text-base leading-relaxed">
                 <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
               </AccordionContent>
             </AccordionItem>

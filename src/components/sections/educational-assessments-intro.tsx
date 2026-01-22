@@ -26,12 +26,12 @@ const assessmentTypes = [
 
 const EducationalAssessmentsIntro = () => {
   return (
-    <section id="assessments" className="bg-secondary py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="services" className="bg-secondary/30 py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-primary text-3xl md:text-4xl font-bold mb-6">
-            Types of Assessments Offered
+        <div className="text-center mb-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-6">
+            Types of <span className="text-primary">Assessments</span> Offered
           </h2>
           <div className="max-w-3xl mx-auto">
             <div className="text-muted-foreground space-y-4 text-lg leading-relaxed">
@@ -46,20 +46,28 @@ const EducationalAssessmentsIntro = () => {
         </div>
 
         {/* Assessment Types Grid */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
           {assessmentTypes.map((assessment, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden border-t-4 border-[#5f7362] shadow-sm">
-              <div className="relative h-48">
+            <div 
+              key={index} 
+              className="group bg-card rounded-2xl overflow-hidden border border-border/50 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
                 <Image
                   src={assessment.image}
                   alt={`${assessment.title} - Child learning and assessment`}
                   fill
-                  className="object-cover"
+                  className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
               </div>
-              <div className="p-6 lg:p-8">
-                <h3 className="text-[#5f7362] font-bold text-xl mb-4">{assessment.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{assessment.description}</p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors mb-4">
+                  {assessment.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {assessment.description}
+                </p>
               </div>
             </div>
           ))}
@@ -67,12 +75,12 @@ const EducationalAssessmentsIntro = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <p className="text-muted-foreground mb-6 text-lg">
+          <p className="text-muted-foreground mb-8 text-xl font-medium max-w-2xl mx-auto">
             We work collaboratively with families and educators to ensure our insights translate into meaningful support strategies that help your child thrive.
           </p>
           <Link
             href="/contact-us"
-            className="inline-block bg-[#5f7362] text-white rounded-[25px] font-medium px-8 py-[15px] text-base shadow-[0_4px_12px_rgba(95,115,98,0.3)] hover:bg-[#5f7362]/90 transition-transform duration-300 ease-in-out hover:scale-105"
+            className="inline-flex items-center justify-center bg-primary text-white text-lg font-bold rounded-full px-10 py-4 shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1"
           >
             Request an appointment
           </Link>
