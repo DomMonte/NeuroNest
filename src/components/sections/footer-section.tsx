@@ -55,14 +55,14 @@ const FooterSection = () => {
             <div className="space-y-3">
               <p className="text-base">
                 <strong className="text-white mr-2 font-bold">Phone</strong>
-                <a href="tel:0416086366" className="text-white/80 hover:text-white transition-colors">
-                  0416 086 366
+                <a href="tel:+61404362115" className="text-white/80 hover:text-white transition-colors">
+                  +61 404 362 115
                 </a>
               </p>
               <p className="text-base">
                 <strong className="text-white mr-2 font-bold">Email</strong>
-                <a href="mailto:daniela@neuronestadl.com.au" className="text-white/80 hover:text-white transition-colors">
-                  daniela@neuronestadl.com.au
+                <a href="mailto:admin@neuronestadl.com.au" className="text-white/80 hover:text-white transition-colors">
+                  admin@neuronestadl.com.au
                 </a>
               </p>
             </div>

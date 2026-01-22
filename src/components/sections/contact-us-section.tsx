@@ -194,7 +194,11 @@ export default function ContactUsSection() {
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground mb-1">Email</h3>
-                      <p className="text-muted-foreground">daniela@neuronestadl.com.au</p>
+                      <p className="text-muted-foreground">
+                        <a href="mailto:admin@neuronestadl.com.au" className="hover:underline">
+                          admin@neuronestadl.com.au
+                        </a>
+                      </p>
                     </div>
                   </div>
                   
@@ -204,7 +208,11 @@ export default function ContactUsSection() {
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground">0416 086 366</p>
+                      <p className="text-muted-foreground">
+                        <a href="tel:+61404362115" className="hover:underline">
+                          +61 404 362 115
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>

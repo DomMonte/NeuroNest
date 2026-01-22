@@ -13,12 +13,12 @@ const ReadyToGetStartedSection = () => {
         </p>
         <p className="text-lg text-white mb-10">
           If you have any questions, we encourage you to contact us on{' '}
-          <a href="tel:0416086366" className="font-bold hover:underline">
-            0416 086 366
+          <a href="tel:+61404362115" className="font-bold hover:underline">
+            +61 404 362 115
           </a>{' '}
           or{' '}
-          <a href="mailto:daniela@neuronestadl.com.au" className="font-bold hover:underline">
-            daniela@neuronestadl.com.au
+          <a href="mailto:admin@neuronestadl.com.au" className="font-bold hover:underline">
+            admin@neuronestadl.com.au
           </a>
         </p>
         <Link
